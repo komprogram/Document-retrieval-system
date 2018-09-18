@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+
+<html lang="en-US">
+	<head>
+		<title>Search Engine</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	
+
+	<body >
+	<div class="container">
+	    <div class="header">
+            <ul>
+                <li><a class="active" href="ass1.html">Assignment I</a></li>
+                <li><a href="ass2.html">Assignment II</a></li>
+                <li><a href="ass3.html">Assignment III</a></li>
+            </ul>
+    	</div>	
+        
+        <table width=100% style="margin:0px; padding:0px">
+            <tr>
+                <td style="width:100%; margin:0px; padding:0px">
+                    <form class="search" action="searcher_tfidf_2.cgi" method="post" target="frame1">
+                        <input type="text" name="query" placeholder="Enter Query">
+				        <input type="submit" value="TFIDF" >
+				    </form>
+				    <br>
+				    <iframe src="blank.html" name="frame1" scrolling="auto" frameborder="no" width=100% height=800px></iframe>
+				</td>
+                <td style="width:100%; margin:0px; padding:0px">
+                    <form class="search" action="searcher_bm25f_2.cgi" method="post" target="frame2">
+                        <input type="text" name="query" placeholder="Enter Query" >
+				        <input type="submit" value="BM25" >
+				    </form>
+				    <br>
+				    <iframe src="blank.html" scrolling="auto" frameborder="no" name="frame2" width=650px height=800px></iframe>
+                </td>
+            </tr>
+        </table>
+		
+		
+	    
+
+	</div>
+    </body>
+</html>
